@@ -109,6 +109,6 @@ body {
 
     .like-btn {
         width: 100%; /* Кнопка лайка на всю ширину для удобства нажатия пальцем */
-        text-align: center;
+        text-align: center; /*kaifarik*/
     }
 }
