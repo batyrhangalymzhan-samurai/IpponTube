@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IpponTube | Твой видео-хаб</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="left-section">
+            <i data-lucide="menu" class="icon-btn"></i>
+            <div class="logo">
+                <i data-lucide="play-circle" style="color: red;"></i>
+                <span>IpponTube</span>
+            </div>
+        </div>
+        
+        <div class="search-section">
+            <input type="text" id="search-input" placeholder="Введите запрос...">
+            <button id="search-btn"><i data-lucide="search"></i></button>
+        </div>
+
+        <div class="right-section">
+            <i data-lucide="video" class="icon-btn"></i>
+            <i data-lucide="bell" class="icon-btn"></i>
+            <div class="user-avatar">G</div>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <aside class="sidebar">
+            <div class="nav-link active" data-category="all"><i data-lucide="home"></i> Главная</div>
+            <div class="nav-link" data-category="IT"><i data-lucide="compass"></i> IT и Код</div>
+            <div class="nav-link" data-category="Спорт"><i data-lucide="layers"></i> Спорт</div>
+            <hr>
+            <div class="nav-link"><i data-lucide="play-square"></i> Библиотека</div>
+            <div class="nav-link"><i data-lucide="history"></i> История</div>
+        </aside>
+
+        <main class="content">
+            <div class="top-filters">
+                <button class="filter-chip active" data-category="all">Все</button>
+                <button class="filter-chip" data-category="IT">IT и Код</button>
+                <button class="filter-chip" data-category="Спорт">Спорт</button>
+            </div>
+
+            <div id="video-grid" class="video-grid"></div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons(); // Инициализация иконок
+    </script>
+</body>
+</html>
